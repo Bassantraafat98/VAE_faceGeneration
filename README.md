@@ -42,11 +42,11 @@ The generator script provides functionality to:
 
 ### Model Training
 
-The model should be trained and saved to `./checkpoints_best/vae_model_20.pth`
+The model was trained and the best checkpoint was saved to `./checkpoints_best/vae_model_20.pth`
 
 ### Generating Images
 
-1. Place your input image in `./data/tested_data/`
+1. Place your input image in `./tested_data/`
 2. Run the generator:
 ```bash
 python genpic.py
@@ -69,12 +69,6 @@ The script will:
 - Number of variations: 10
 - Variance scaling factor: 0.01
 
-## Dependencies
-
-- PyTorch
-- torchvision
-- PIL (Python Imaging Library)
-
 ## File Structure
 
 ```
@@ -82,8 +76,7 @@ The script will:
 ├── vae.py              # VAE model implementation
 ├── genpic.py           # Image generation script
 ├── checkpoints_best/   # Model checkpoints directory
-└── data/
-    └── tested_data/   # Input images directory
+└── tested_data/ # Input images directory
 ```
 
 ## Implementation Details
